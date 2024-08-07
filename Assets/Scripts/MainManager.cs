@@ -83,7 +83,6 @@ public class MainManager : MonoBehaviour
 
         if (m_Points > RecordIO.Instance.theScore)
 		{
-            PlayerDataHandler.Instance.score = m_Points;
             RecordIO.Instance.theScore = m_Points;
             RecordIO.Instance.Save();
             Debug.Log("Update best score: " + m_Points);
